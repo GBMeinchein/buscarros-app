@@ -1,0 +1,8 @@
+C:\Projetos\buscarros\buscarros\buscarros.infra\bin\Debug\netstandard2.0\buscarros.infra.deps.json
+C:\Projetos\buscarros\buscarros\buscarros.infra\bin\Debug\netstandard2.0\buscarros.infra.dll
+C:\Projetos\buscarros\buscarros\buscarros.infra\obj\Debug\netstandard2.0\buscarros.infra.csprojAssemblyReference.cache
+C:\Projetos\buscarros\buscarros\buscarros.infra\obj\Debug\netstandard2.0\buscarros.infra.AssemblyInfoInputs.cache
+C:\Projetos\buscarros\buscarros\buscarros.infra\obj\Debug\netstandard2.0\buscarros.infra.AssemblyInfo.cs
+C:\Projetos\buscarros\buscarros\buscarros.infra\bin\Debug\netstandard2.0\buscarros.infra.pdb
+C:\Projetos\buscarros\buscarros\buscarros.infra\obj\Debug\netstandard2.0\buscarros.infra.dll
+C:\Projetos\buscarros\buscarros\buscarros.infra\obj\Debug\netstandard2.0\buscarros.infra.pdb

@@ -1,0 +1,11 @@
+C:\Projetos\buscarros\buscarros\buscarros.core\bin\Debug\netstandard2.0\buscarros.core.deps.json
+C:\Projetos\buscarros\buscarros\buscarros.core\bin\Debug\netstandard2.0\buscarros.core.dll
+C:\Projetos\buscarros\buscarros\buscarros.core\bin\Debug\netstandard2.0\buscarros.core.pdb
+C:\Projetos\buscarros\buscarros\buscarros.core\bin\Debug\netstandard2.0\buscarros.infra.dll
+C:\Projetos\buscarros\buscarros\buscarros.core\bin\Debug\netstandard2.0\buscarros.infra.pdb
+C:\Projetos\buscarros\buscarros\buscarros.core\obj\Debug\netstandard2.0\buscarros.core.csprojAssemblyReference.cache
+C:\Projetos\buscarros\buscarros\buscarros.core\obj\Debug\netstandard2.0\buscarros.core.AssemblyInfoInputs.cache
+C:\Projetos\buscarros\buscarros\buscarros.core\obj\Debug\netstandard2.0\buscarros.core.AssemblyInfo.cs
+C:\Projetos\buscarros\buscarros\buscarros.core\obj\Debug\netstandard2.0\buscarros.core.csproj.CopyComplete
+C:\Projetos\buscarros\buscarros\buscarros.core\obj\Debug\netstandard2.0\buscarros.core.dll
+C:\Projetos\buscarros\buscarros\buscarros.core\obj\Debug\netstandard2.0\buscarros.core.pdb
