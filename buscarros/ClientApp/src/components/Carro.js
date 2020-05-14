@@ -19,8 +19,9 @@ export class Carro extends Component {
             <tr>
               <th></th>
               <th>Título</th>
+              <th>Marca</th>
               <th>Preço</th>
-              <th>Endereço</th>
+              <th>Cidade</th>
               <th></th>
             </tr>
           </thead>
@@ -34,7 +35,8 @@ export class Carro extends Component {
                   />       
                 </td>         
                 <td>{carro.title}</td>
-                <td>{carro.price}</td>
+                <td>{carro.brand}</td>                
+                <td width="150">{carro.price}</td>
                 <td>{carro.adress}</td>
                 <td><a href={carro.href}  target="_blank">Ir para anúncio original</a></td>
               </tr>
@@ -51,17 +53,17 @@ export class Carro extends Component {
   
       return (
         <div>
-          <h1 id="tabelLabel" >Carros</h1>
           <tr>
             <td>
-              <select class="browser-default custom-select">
-                <option selected>Escolha a marca</option>
-                <option value="1">Chevrolet</option>
-                <option value="2">Wolksvagem</option>
+              <select class="browser-default custom-select" name="marcaSelect" 
+                      onChange={(e) => this.populateCarroDataByBrand(e.target.value)}>
+                <option selected value="">Escolha a marca</option>
+                <option value="CHEVROLET">Chevrolet</option>
+                <option value="FIAT">Fiat</option>
               </select>
             </td>
             <td>
-              <select class="browser-default custom-select">
+              <select class="browser-default custom-select" name="cidadeSelect">
                 <option selected>Escolha a cidade</option>
                 <option value="1">Joinville</option>
                 <option value="2">Jaraguá do Sul</option>
@@ -77,6 +79,12 @@ export class Carro extends Component {
   
     async populateCarroData() {
       const response = await fetch('api/carro');
+      const data = await response.json();
+      this.setState({ carros: data, loading: false });
+    }
+
+    async populateCarroDataByBrand(brand) {
+      const response = await fetch('api/carro?brand='+brand);
       const data = await response.json();
       this.setState({ carros: data, loading: false });
     }

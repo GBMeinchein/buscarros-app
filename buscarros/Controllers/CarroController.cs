@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using buscarros.core.DTO;
 using buscarros.core.Service;
 using buscarros.infra.Models;
 using Microsoft.AspNetCore.Http;
@@ -13,21 +14,21 @@ namespace buscarros.Controllers
     [ApiController]
     public class CarroController : ControllerBase
     {
-        private readonly CarroService _bookService;
+        private readonly CarroService _carService;
 
-        public CarroController(CarroService bookService)
+        public CarroController(CarroService carService)
         {
-            _bookService = bookService;
+            _carService = carService;
         }
 
         [HttpGet]
-        public ActionResult<List<Carro>> Get() =>
-            _bookService.Get();
+        public ActionResult<List<CarroDTO>> Get(string brand = null, string adress = null) =>
+            _carService.Get(brand, adress);
 
-        [HttpGet("{id:length(24)}", Name = "GetCarro")]
-        public ActionResult<Carro> Get(string id)
+        [HttpGet("{id:length(24)}", Name = "GetCar")]
+        public ActionResult<CarroDTO> Get(string id)
         {
-            var book = _bookService.Get(id);
+            var book = _carService.Get(id);
 
             if (book == null)
             {

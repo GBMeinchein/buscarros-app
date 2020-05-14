@@ -11,15 +11,26 @@ namespace buscarros.infra.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
+
         [BsonElement("title")]
         public string Title { get; set; }
+
         [BsonElement("price")]
-        public string Price { get; set; }
+        public decimal Price { get; set; }
+
         [BsonElement("href")]
         public string Href { get; set; }
+
         [BsonElement("adress")]
         public string Adress { get; set; }
+
         [BsonElement("image")]
         public string Image { get; set; }
+
+        [BsonElement("site")]
+        public string Site { get; set; }
+
+        [BsonElement("brand")]
+        public string Brand { get; set; }
     }
 }
